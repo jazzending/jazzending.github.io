@@ -52,6 +52,9 @@ h2 em { font-style:italic; font-weight:500; letter-spacing:-.045em; }
 .project-link:hover { border-color:var(--black); }
 .project-link span { margin-left:5px; }
 .is-muted { color:#777; cursor:default; }
+.project-video { grid-column:1 / -1; grid-row:4; margin-top:3px; }
+.video-label { margin:0 0 9px; color:#555550; font:500 11px "DM Mono",monospace; letter-spacing:.05em; text-transform:uppercase; }
+.project-video video { display:block; width:100%; max-height:430px; background:#151515; border:1px solid #b8b7b1; }
 .album-cover { background:#101010; padding:15px; }
 .music-player { display:flex; flex-direction:column; width:100%; height:100%; min-height:0; padding:20px; color:#efefea; background:#1a1a1a; border:1px solid #3b3b3b; }
 .player-top { display:flex; justify-content:space-between; color:#aaa9a4; font:500 10px "DM Mono",monospace; letter-spacing:.08em; }
@@ -99,6 +102,7 @@ footer a:hover { color:var(--black); }
   .project-list { display:block; }
   .project,.project:nth-child(2),.project:nth-child(3) { display:grid; grid-template-columns:1fr auto; margin:0 0 58px; }
   .project-image { aspect-ratio:1 / 1; }
+  .project-video { margin-top:0; }
   .project h3 { font-size:34px; }
   .about,.contact { padding:76px 22px; }
   .about-layout { grid-template-columns:1fr; gap:35px; }

@@ -21,6 +21,14 @@ function renderProject(project) {
   const link = project.link
     ? `<a class="project-link" href="${project.link}" target="_blank" rel="noreferrer">${project.linkLabel} <span>↗</span></a>`
     : `<span class="project-link is-muted">${project.linkLabel}</span>`;
+  const video = project.video
+    ? `<div class="project-video">
+        <p class="video-label">${project.videoLabel || "Testing video"}</p>
+        <video controls preload="metadata" playsinline aria-label="${project.videoLabel || "Testing video"}">
+          <source src="${project.video}" type="video/mp4" />
+        </video>
+      </div>`
+    : "";
 
   return `
     <article class="project">
@@ -34,6 +42,7 @@ function renderProject(project) {
         ${link}
       </div>
       <div class="project-image ${project.imageClass || ""}">${image}</div>
+      ${video}
     </article>`;
 }
 
