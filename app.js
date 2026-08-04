@@ -21,13 +21,8 @@ function renderProject(project) {
   const link = project.link
     ? `<a class="project-link" href="${project.link}" target="_blank" rel="noreferrer">${project.linkLabel} <span>↗</span></a>`
     : `<span class="project-link is-muted">${project.linkLabel}</span>`;
-  const video = project.video
-    ? `<div class="project-video">
-        <p class="video-label">${project.videoLabel || "Testing video"}</p>
-        <video controls preload="metadata" playsinline aria-label="${project.videoLabel || "Testing video"}">
-          <source src="${project.video}" type="video/mp4" />
-        </video>
-      </div>`
+  const testingLink = project.testingLink
+    ? `<a class="project-link project-testing-link" href="${project.testingLink}">${project.testingLinkLabel} <span>→</span></a>`
     : "";
 
   return `
@@ -40,9 +35,9 @@ function renderProject(project) {
         <p class="project-role">${project.role}</p>
         <div class="tags">${project.tags.map((tag) => `<span>${tag}</span>`).join("")}</div>
         ${link}
+        ${testingLink}
       </div>
       <div class="project-image ${project.imageClass || ""}">${image}</div>
-      ${video}
     </article>`;
 }
 

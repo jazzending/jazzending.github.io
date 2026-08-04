@@ -12,10 +12,10 @@ const projects = [
     image: "images/thisone-blueberry.png",
     imageClass: "thisone-preview",
     imageAlt: "ThisOne blueberry comparison app preview",
-    video: "videos/thisone-testing.mp4",
-    videoLabel: "Testing ThisOne with beef",
     link: "https://github.com/jazzending/thisone",
-    linkLabel: "View project on GitHub"
+    linkLabel: "View project on GitHub",
+    testingLink: "thisone-test.html",
+    testingLinkLabel: "Watch the app testing video"
   },
   {
     number: "A-002",

@@ -51,10 +51,8 @@ h2 em { font-style:italic; font-weight:500; letter-spacing:-.045em; }
 .project-link { border-bottom:1px solid #777; padding-bottom:4px; font-size:14px; font-weight:600; text-decoration:none; }
 .project-link:hover { border-color:var(--black); }
 .project-link span { margin-left:5px; }
+.project-testing-link { display:table; width:max-content; margin-top:15px; }
 .is-muted { color:#777; cursor:default; }
-.project-video { grid-column:1 / -1; grid-row:4; margin-top:3px; }
-.video-label { margin:0 0 9px; color:#555550; font:500 11px "DM Mono",monospace; letter-spacing:.05em; text-transform:uppercase; }
-.project-video video { display:block; width:100%; max-height:430px; background:#151515; border:1px solid #b8b7b1; }
 .album-cover { background:#101010; padding:15px; }
 .music-player { display:flex; flex-direction:column; width:100%; height:100%; min-height:0; padding:20px; color:#efefea; background:#1a1a1a; border:1px solid #3b3b3b; }
 .player-top { display:flex; justify-content:space-between; color:#aaa9a4; font:500 10px "DM Mono",monospace; letter-spacing:.08em; }
@@ -87,6 +85,17 @@ footer { display:flex; justify-content:space-between; max-width:1640px; margin:a
 footer a { text-decoration:none; }
 footer a:hover { color:var(--black); }
 
+.testing-page { min-height:100svh; color:var(--white); background:var(--black); }
+.testing-header { display:flex; align-items:center; justify-content:space-between; padding:25px 3.5vw; border-bottom:1px solid #292929; }
+.testing-header a { color:var(--white); font:500 13px "DM Mono",monospace; letter-spacing:.04em; text-decoration:none; }
+.testing-header a:hover { color:#c4c4bf; }
+.testing-main { max-width:1320px; margin:0 auto; padding:8vh 3.5vw 12vh; }
+.testing-kicker { margin:0 0 20px; color:#b8b8b4; font:500 13px "DM Mono",monospace; letter-spacing:.07em; }
+.testing-main h1 { max-width:930px; font-size:clamp(54px,8.6vw,130px); }
+.testing-intro { max-width:580px; margin:34px 0 55px; color:#c4c4bf; font-size:20px; line-height:1.45; }
+.testing-video { width:100%; border:1px solid #3e3e3b; background:#151515; }
+.testing-note { margin:16px 0 0; color:#989894; font:400 12px "DM Mono",monospace; }
+
 @media (max-width:760px) {
   .hero { min-height:680px; }
   .site-header { height:64px; padding:0 22px; }
@@ -102,10 +111,13 @@ footer a:hover { color:var(--black); }
   .project-list { display:block; }
   .project,.project:nth-child(2),.project:nth-child(3) { display:grid; grid-template-columns:1fr auto; margin:0 0 58px; }
   .project-image { aspect-ratio:1 / 1; }
-  .project-video { margin-top:0; }
   .project h3 { font-size:34px; }
   .about,.contact { padding:76px 22px; }
   .about-layout { grid-template-columns:1fr; gap:35px; }
   .about-layout > div { font-size:17px; line-height:1.55; }
   footer { padding:19px 22px; gap:10px; font-size:11px; }
+  .testing-header { padding:21px 22px; }
+  .testing-main { padding:70px 22px 86px; }
+  .testing-main h1 { font-size:clamp(52px,14vw,82px); }
+  .testing-intro { margin:26px 0 34px; font-size:17px; }
 }
