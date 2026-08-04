@@ -93,7 +93,7 @@ footer a:hover { color:var(--black); }
 .testing-kicker { margin:0 0 20px; color:#b8b8b4; font:500 13px "DM Mono",monospace; letter-spacing:.07em; }
 .testing-main h1 { max-width:930px; font-size:clamp(54px,8.6vw,130px); }
 .testing-intro { max-width:580px; margin:34px 0 55px; color:#c4c4bf; font-size:20px; line-height:1.45; }
-.testing-video { width:100%; border:1px solid #3e3e3b; background:#151515; }
+.testing-video { display:block; width:min(100%,760px); max-height:62svh; border:1px solid #3e3e3b; background:#151515; }
 .testing-note { margin:16px 0 0; color:#989894; font:400 12px "DM Mono",monospace; }
 
 @media (max-width:760px) {
@@ -120,4 +120,5 @@ footer a:hover { color:var(--black); }
   .testing-main { padding:70px 22px 86px; }
   .testing-main h1 { font-size:clamp(52px,14vw,82px); }
   .testing-intro { margin:26px 0 34px; font-size:17px; }
+  .testing-video { width:100%; max-height:none; }
 }
