@@ -4,7 +4,15 @@ function renderProject(project) {
   const standardImage = project.image
     ? `<img src="${project.image}" alt="${project.imageAlt}" loading="lazy" />`
     : `<div class="coming-soon" aria-label="${project.imageAlt}"><span>IN<br />PROGRESS</span><i></i></div>`;
-  const image = project.imageClass === "album-cover"
+  const image = project.imageClass === "tunecue-preview"
+    ? `<div class="tunecue-mini" aria-label="TuneCue interface preview">
+        <div class="tunecue-sample-card">
+          <div class="tunecue-sample-top"><span>Sample result</span><b>Style snapshot</b></div>
+          <div class="tunecue-sample-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="tunecue-sample-copy"><strong>Atmospheric alternative pop</strong><p>Mid-tempo · steady groove · fuller later section</p><small>atmospheric alt-pop · spacious · restrained</small></div>
+        </div>
+      </div>`
+    : project.imageClass === "album-cover"
     ? `<div class="music-player" aria-label="Album player preview">
         <div class="player-top"><span>NOW PLAYING</span><span>01 / 05</span></div>
         <div class="player-main">
@@ -19,7 +27,7 @@ function renderProject(project) {
       </div>`
     : standardImage;
   const link = project.link
-    ? `<a class="project-link" href="${project.link}" target="_blank" rel="noreferrer">${project.linkLabel} <span>↗</span></a>`
+    ? `<a class="project-link" href="${project.link}"${project.internalLink ? "" : ' target="_blank" rel="noreferrer"'}>${project.linkLabel} <span>${project.internalLink ? "→" : "↗"}</span></a>`
     : `<span class="project-link is-muted">${project.linkLabel}</span>`;
   const testingLink = project.testingLink
     ? `<a class="project-link project-testing-link" href="${project.testingLink}">${project.testingLinkLabel} <span>→</span></a>`

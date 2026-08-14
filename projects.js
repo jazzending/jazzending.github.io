@@ -19,6 +19,21 @@ const projects = [
   },
   {
     number: "A-002",
+    type: "CREATIVE TOOL · EARLY MVP",
+    title: "TuneCue",
+    subtitle: "Turn a reference track into an AI music prompt",
+    description: "An AI-made music tool for people creating with AI music generators. Upload a reference track to explore its mood, tempo, sound palette, and arrangement, then turn those cues into a clear English prompt.",
+    role: "Product concept · UX writing · AI-assisted build",
+    tags: ["AI music", "AI Music Generator", "Local-first"],
+    image: "",
+    imageClass: "tunecue-preview",
+    imageAlt: "TuneCue music analysis tool interface",
+    link: "tunecue.html",
+    linkLabel: "View project overview",
+    internalLink: true
+  },
+  {
+    number: "A-003",
     type: "SOUND COLLECTION",
     title: "Little Night Forest: Bedtime Stories & Sleep Music for Kids",
     subtitle: "Five gentle songs for bedtime",
@@ -32,7 +47,7 @@ const projects = [
     linkLabel: "Listen on YouTube"
   },
   {
-    number: "A-003",
+    number: "A-004",
     type: "VISUAL STORIES · IN PROGRESS",
     title: "Untitled Comic Series",
     subtitle: "A world still taking shape",

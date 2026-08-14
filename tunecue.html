@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TuneCue: a local AI-assisted music reference tool by Yiyi." />
+    <title>TuneCue — Yiyi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="detail-page tunecue-page">
+    <header class="detail-header">
+      <a class="wordmark" href="index.html#work">YIYI<span>.</span></a>
+      <a class="back-link" href="index.html#work">← Back to archive</a>
+    </header>
+    <main>
+      <section class="detail-hero">
+        <p class="detail-kicker">A-002 / CREATIVE TOOL · EARLY MVP</p>
+        <h1>TuneCue<br /><em>Listen with direction.</em></h1>
+        <p class="detail-lede">A music reference tool that turns the qualities of a track into clear creative direction for making music with AI.</p>
+      </section>
+      <section class="tunecue-intro detail-grid-section">
+        <div>
+          <p class="detail-label">WHAT IT DOES</p>
+          <h2>From a track<br />to a useful <em>starting point.</em></h2>
+        </div>
+        <div class="detail-body">
+          <p>Upload a reference track and TuneCue helps make its musical qualities easier to describe: mood, tempo, sound palette, and arrangement direction. Those cues are then shaped into an English prompt for AI music generators.</p>
+          <p>Made for music makers with a clear taste, even without music theory or production jargon.</p>
+          <div class="detail-tags"><span>AI music</span><span>AI Music Generator</span><span>Local-first</span></div>
+        </div>
+      </section>
+      <section class="tunecue-showcase" aria-label="TuneCue interface overview">
+        <div class="showcase-label"><span>01 / INTERFACE</span><span>English version</span></div>
+        <div class="tunecue-product-window" aria-label="TuneCue English interface preview">
+          <div class="tunecue-window-bar"><strong>TuneCue</strong><span>Audio stays on your device</span><i>● ● ●</i></div>
+          <div class="tunecue-window-hero"><div><p>DON'T KNOW MUSIC THEORY?</p><h3>You can still make<br />great music.</h3></div><div class="tunecue-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+          <div class="tunecue-app-grid">
+            <div class="tunecue-upload-card"><p>UPLOAD A REFERENCE TRACK</p><div class="tunecue-drop"><b>↥</b><strong>Drop an audio file here</strong><span>MP3 / WAV / M4A / OGG</span></div><button>Analyze <span>→</span></button></div>
+            <div class="tunecue-result-card"><p>WHAT STYLE IS THIS TRACK?</p><h3>Atmospheric<br />alternative pop</h3><span>The opening is quiet and restrained, then the chorus feels fuller.</span><div><b>Mid-tempo</b><b>Steady groove</b><b>Quiet mood</b></div></div>
+          </div>
+        </div>
+      </section>
+      <section class="tunecue-walkthrough">
+        <div class="walkthrough-heading">
+          <p class="detail-label">EXAMPLE WALKTHROUGH</p>
+          <h2>Three steps.<br /><em>No music theory required.</em></h2>
+        </div>
+        <ol class="walkthrough-steps">
+          <li><span>01</span><div><h3>Choose a reference track</h3><p>Start with a song that has the feeling or sound direction you want to explore.</p></div></li>
+          <li><span>02</span><div><h3>Read the musical cues</h3><p>TuneCue describes practical cues such as tempo, mood, groove, texture, and the way the arrangement builds.</p></div></li>
+          <li><span>03</span><div><h3>Copy an AI music prompt</h3><p>Switch between a simple or detailed version, then use the prompt as a more informed starting point for a new track.</p></div></li>
+        </ol>
+      </section>
+      <section class="tunecue-prompt-showcase">
+        <div class="showcase-label"><span>02 / PROMPT OUTPUT</span><span>Simple or detailed</span></div>
+        <div class="tunecue-prompt-preview" aria-label="TuneCue prompt output preview">
+          <div><span>MUSIC PROMPT</span><h3>Copy this prompt</h3></div><button>Copy</button>
+          <p class="prompt-toggle"><b>Simple</b><span>Detailed</span></p>
+          <pre>atmospheric alternative pop, mid-tempo, steady groove, sparse percussion, open space, quiet and introspective, warm electric piano, soft drums, rounded bass, airy synth pad</pre>
+          <small>Simple keeps the core style descriptors. Detailed adds arrangement, mood, and sound texture.</small>
+        </div>
+      </section>
+      <section class="detail-credits">
+        <p class="detail-label">MADE BY YIYI</p>
+        <p>Product concept · UX writing · AI-assisted front-end build</p>
+        <p class="detail-note">Early local MVP. Audio stays on the user's device and is not uploaded.</p>
+      </section>
+    </main>
+    <footer>
+      <p>© <span id="year"></span> Yiyi</p><a href="index.html#work">Back to archive ↑</a><p>Made with curiosity + AI</p>
+    </footer>
+    <script>document.querySelector("#year").textContent = new Date().getFullYear();</script>
+  </body>
+</html>
