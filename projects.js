@@ -22,9 +22,9 @@ const projects = [
     type: "CREATIVE TOOL · EARLY MVP",
     title: "TuneCue",
     subtitle: "Turn a reference track into an AI music prompt",
-    description: "An AI-made music tool for people creating with AI music generators. Upload a reference track to explore its mood, tempo, sound palette, and arrangement, then turn those cues into a clear English prompt.",
+    description: "Like the sound of a song but not sure how to describe it? Upload the track to TuneCue. It breaks down its style, rhythm, and arrangement, then turns those cues into a clear English prompt for Suno, Udio, and other AI music tools — so you can create an original track in a similar direction.",
     role: "Product concept · UX writing · AI-assisted build",
-    tags: ["AI music", "AI Music Generator", "Local-first"],
+    tags: ["AI music", "Prompt tool", "Local-first"],
     image: "",
     imageClass: "tunecue-preview",
     imageAlt: "TuneCue music analysis tool interface",
@@ -45,18 +45,5 @@ const projects = [
     imageAlt: "Little Night Forest album artwork",
     link: "https://www.youtube.com/watch?v=OHG_9Jyj2oY&list=OLAK5uy_mmG4CnsxgflNKzxyOHdG3Kxv8Gx_zQHLQ",
     linkLabel: "Listen on YouTube"
-  },
-  {
-    number: "A-004",
-    type: "VISUAL STORIES · IN PROGRESS",
-    title: "Untitled Comic Series",
-    subtitle: "A world still taking shape",
-    description: "An original comic series written by Yiyi and visualized with AI. The story and characters come from her own writing, while AI helps turn them into scenes and panels. New chapters are in development.",
-    role: "Original story · Art direction · AI visualization",
-    tags: ["AI comics", "Visual storytelling", "In progress"],
-    image: "",
-    imageAlt: "Placeholder for Yiyi's upcoming AI comic series",
-    link: "",
-    linkLabel: "Coming soon"
   }
 ];

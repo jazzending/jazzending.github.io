@@ -111,6 +111,11 @@ footer a:hover { color:var(--black); }
 .detail-kicker,.detail-label { margin:0; color:#aaa9a4; font:500 12px "DM Mono",monospace; letter-spacing:.06em; }
 .detail-hero h1 { max-width:1120px; font-size:clamp(64px,10.5vw,168px); }
 .detail-lede { max-width:540px; margin:44px 0 0; color:#c8c8c3; font-size:clamp(19px,2.1vw,29px); line-height:1.32; }
+.detail-actions { display:flex; align-items:center; flex-wrap:wrap; gap:18px; margin-top:38px; }
+.primary-link { display:inline-flex; align-items:center; gap:12px; border-radius:999px; padding:13px 18px; color:var(--black); background:#f2a083; font:600 14px "DM Mono",monospace; text-decoration:none; }
+.primary-link:hover { background:#f7b39b; }
+.primary-link span { font-size:17px; }
+.detail-actions > span { color:#aaa9a4; font:500 11px "DM Mono",monospace; }
 .detail-grid-section { display:grid; grid-template-columns:1.05fr .95fr; gap:70px; padding:105px 8vw; color:var(--black); background:var(--paper); }
 .detail-grid-section h2,.tunecue-walkthrough h2 { margin:14px 0 0; font-size:clamp(44px,6vw,90px); font-weight:700; letter-spacing:-.06em; line-height:.92; }
 .detail-body { max-width:540px; padding-top:54px; font-size:20px; line-height:1.52; }
@@ -173,6 +178,7 @@ footer a:hover { color:var(--black); }
   .detail-hero { min-height:590px; padding:75px 22px 65px; }
   .detail-hero h1 { font-size:clamp(53px,14vw,82px); }
   .detail-lede { margin-top:30px; font-size:18px; }
+  .detail-actions { align-items:flex-start; flex-direction:column; gap:13px; margin-top:28px; }
   .detail-grid-section,.tunecue-walkthrough { grid-template-columns:1fr; gap:42px; padding:76px 22px; }
   .detail-body { padding-top:0; font-size:17px; }
   .tunecue-showcase,.tunecue-prompt-showcase { padding:65px 22px 76px; }
