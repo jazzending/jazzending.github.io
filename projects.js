@@ -19,6 +19,20 @@ const projects = [
   },
   {
     number: "A-002",
+    type: "CURATED WEB PRODUCT · LIVE",
+    title: "Soft Pause",
+    subtitle: "Tiny games for a better break",
+    description: "A curated web product for small moments of rest. Choose a mood, how much time you have, and where you are; Soft Pause gives you three short browser games that fit the moment.",
+    role: "Product concept · Game curation · AI-assisted build",
+    tags: ["Live site", "Game discovery", "Responsive web"],
+    image: "images/soft-pause-home.png",
+    imageClass: "soft-pause-preview",
+    imageAlt: "Soft Pause homepage with mood, time, and scene game picker",
+    link: "https://softpausegames.web.app/",
+    linkLabel: "Visit live site"
+  },
+  {
+    number: "A-003",
     type: "CREATIVE TOOL · EARLY MVP",
     title: "TuneCue",
     subtitle: "Turn a reference track into an AI music prompt",
@@ -33,7 +47,7 @@ const projects = [
     internalLink: true
   },
   {
-    number: "A-003",
+    number: "A-004",
     type: "SOUND COLLECTION",
     title: "Little Night Forest: Bedtime Stories & Sleep Music for Kids",
     subtitle: "Five gentle songs for bedtime",
