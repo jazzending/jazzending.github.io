@@ -29,6 +29,9 @@ function renderProject(project) {
   const link = project.link
     ? `<a class="project-link" href="${project.link}"${project.internalLink ? "" : ' target="_blank" rel="noreferrer"'}>${project.linkLabel} <span>${project.internalLink ? "→" : "↗"}</span></a>`
     : `<span class="project-link is-muted">${project.linkLabel}</span>`;
+  const languageLink = project.languageLink
+    ? `<a class="project-link project-language-link" href="${project.languageLink}" target="_blank" rel="noreferrer">${project.languageLinkLabel} <span>↗</span></a>`
+    : "";
   const testingLink = project.testingLink
     ? `<a class="project-link project-testing-link" href="${project.testingLink}">${project.testingLinkLabel} <span>→</span></a>`
     : "";
@@ -43,6 +46,7 @@ function renderProject(project) {
         <p class="project-role">${project.role}</p>
         <div class="tags">${project.tags.map((tag) => `<span>${tag}</span>`).join("")}</div>
         ${link}
+        ${languageLink}
         ${testingLink}
       </div>
       <div class="project-image ${project.imageClass || ""}">${image}</div>

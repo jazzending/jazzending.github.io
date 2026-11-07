@@ -1,6 +1,6 @@
 # Yiyi Studio Portfolio — Handoff
 
-Last reviewed: 2026-09-13  
+Last reviewed: 2026-11-07
 Primary public site: <https://yiyistudio.web.app/>  
 Primary repository: <https://github.com/jazzending/jazzending.github.io>
 
@@ -76,12 +76,13 @@ Each block in `projects.js` becomes one archive card. Keep the same fields unles
 
 ## 4. Current published project structure
 
-The current `main` branch displays this order:
+The prepared release displays this order; update this wording to `current main branch` after publication:
 
-1. **ThisOne** — supermarket ingredient comparison app. Its card links to the GitHub project and to `thisone-test.html`, which shows a separate real-use video.
-2. **Soft Pause** — a curated game-break web product. Live site: <https://softpausegames.web.app/>.
-3. **TuneCue** — reference-track-to-prompt music tool. The main branch currently links to `tunecue.html`, an overview page. A newer free-beta version exists in the legacy local checkout and is **not yet confirmed as merged to `main`**.
-4. **Little Night Forest** — AI-made children's bedtime album, linked to YouTube.
+1. **Somewhere, a Lighthouse** — interactive bilingual postcard experience built around 200 real lighthouses. Live site: <https://somewhere-lighthouse.web.app/>.
+2. **ThisOne** — supermarket ingredient comparison app. Its card links to the GitHub project and to `thisone-test.html`, which shows a separate real-use video.
+3. **Soft Pause** — a curated game-break web product. Live site: <https://softpausegames.web.app/>.
+4. **TuneCue** — reference-track-to-prompt music tool. The main branch currently links to `tunecue.html`, an overview page. A newer free-beta version exists in the legacy local checkout and is **not yet confirmed as merged to `main`**.
+5. **Little Night Forest** — AI-made children's bedtime album, linked to YouTube.
 
 The comic project was intentionally removed. Do not add it back unless Yiyi asks.
 
@@ -156,3 +157,12 @@ Update Bonjour only when specifically requested, and keep each project card pair
 - Verified `main` has a Firebase Hosting GitHub Action for Firebase project `yiyistudio`.
 - Reviewed the homepage renderer, project data, standalone ThisOne/TuneCue pages, deployment files, and the separate legacy checkout.
 - Created this handoff. No site content, deployment configuration, commit, or live release was changed in this baseline step.
+
+### 2026-11-07 — Add Somewhere, a Lighthouse locally
+
+- Added `Somewhere, a Lighthouse` as the first project, followed by ThisOne and Soft Pause.
+- Added the owned three-screen product preview at `images/somewhere-lighthouse-preview.png` and a project-specific full-image presentation rule.
+- Linked the card to the published product at `https://somewhere-lighthouse.web.app/`.
+- Added a separate `Chinese version / 中文版` link to `https://somewhere-lighthouse.web.app/zh/` beneath the primary project link.
+- Refreshed the homepage CSS and project-data cache versions so visitors receive the new card after release.
+- Updated project numbering and this handoff. Local review is pending before any commit or Firebase release.

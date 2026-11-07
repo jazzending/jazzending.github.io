@@ -3,6 +3,22 @@
 const projects = [
   {
     number: "A-001",
+    type: "INTERACTIVE WEB EXPERIENCE · LIVE",
+    title: "Somewhere, a Lighthouse",
+    subtitle: "Meet a real lighthouse, one postcard at a time",
+    description: "Write a thought — or leave it blank — and meet one of 200 real lighthouses. Each encounter becomes a bilingual watercolor postcard with its name, location, source, and a downloadable front and back.",
+    role: "Product concept · Research direction · UX design · AI-assisted build",
+    tags: ["200 real lighthouses", "Bilingual", "Postcard experience"],
+    image: "images/somewhere-lighthouse-preview.png",
+    imageClass: "lighthouse-preview",
+    imageAlt: "Somewhere, a Lighthouse product showing a prompt, lighthouse postcard front, and postcard back",
+    link: "https://somewhere-lighthouse.web.app/",
+    linkLabel: "Visit live site",
+    languageLink: "https://somewhere-lighthouse.web.app/zh/",
+    languageLinkLabel: "Chinese version / 中文版"
+  },
+  {
+    number: "A-002",
     type: "INTERACTIVE PRODUCT",
     title: "ThisOne",
     subtitle: "Fresh grocery comparison assistant",
@@ -18,7 +34,7 @@ const projects = [
     testingLinkLabel: "Watch the app testing video"
   },
   {
-    number: "A-002",
+    number: "A-003",
     type: "CURATED WEB PRODUCT · LIVE",
     title: "Soft Pause",
     subtitle: "Tiny games for a better break",
@@ -32,7 +48,7 @@ const projects = [
     linkLabel: "Visit live site"
   },
   {
-    number: "A-003",
+    number: "A-004",
     type: "CREATIVE TOOL · EARLY MVP",
     title: "TuneCue",
     subtitle: "Turn a reference track into an AI music prompt",
@@ -47,7 +63,7 @@ const projects = [
     internalLink: true
   },
   {
-    number: "A-004",
+    number: "A-005",
     type: "SOUND COLLECTION",
     title: "Little Night Forest: Bedtime Stories & Sleep Music for Kids",
     subtitle: "Five gentle songs for bedtime",

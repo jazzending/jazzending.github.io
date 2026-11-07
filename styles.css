@@ -44,6 +44,8 @@ h2 em { font-style:italic; font-weight:500; letter-spacing:-.045em; }
 .thisone-preview img,.project:hover .thisone-preview img { object-fit:contain; transform:none; }
 .soft-pause-preview { aspect-ratio:16 / 10; border:1px solid #c7c6c0; background:#f0f1f4; }
 .soft-pause-preview img,.project:hover .soft-pause-preview img { object-fit:contain; transform:none; }
+.lighthouse-preview { aspect-ratio:3 / 2; background:#f5f1eb; }
+.lighthouse-preview img,.project:hover .lighthouse-preview img { object-fit:contain; transform:none; }
 .tunecue-preview { aspect-ratio:16 / 10; background:#f5f1eb; }
 .tunecue-mini { display:flex; flex-direction:column; width:100%; height:100%; padding:18px; color:#1d1918; background:#f5f1eb; }
 .tunecue-sample-card { display:flex; flex:1; flex-direction:column; justify-content:center; padding:clamp(18px,3vw,34px); border-radius:22px; color:#fff9f3; background:#1c1818; box-shadow:0 14px 28px rgba(36,25,20,.16); transform:rotate(1deg); }
@@ -60,7 +62,7 @@ h2 em { font-style:italic; font-weight:500; letter-spacing:-.045em; }
 .project-link { border-bottom:1px solid #777; padding-bottom:4px; font-size:14px; font-weight:600; text-decoration:none; }
 .project-link:hover { border-color:var(--black); }
 .project-link span { margin-left:5px; }
-.project-testing-link { display:table; width:max-content; margin-top:15px; }
+.project-language-link,.project-testing-link { display:table; width:max-content; margin-top:15px; }
 .is-muted { color:#777; cursor:default; }
 .album-cover { background:#101010; padding:15px; }
 .music-player { display:flex; flex-direction:column; width:100%; height:100%; min-height:0; padding:20px; color:#efefea; background:#1a1a1a; border:1px solid #3b3b3b; }
@@ -161,6 +163,7 @@ footer a:hover { color:var(--black); }
   .project-image { aspect-ratio:4 / 3; }
   .thisone-preview { aspect-ratio:16 / 9; }
   .soft-pause-preview { aspect-ratio:16 / 10; }
+  .lighthouse-preview { aspect-ratio:3 / 2; }
   .tunecue-preview { aspect-ratio:16 / 10; }
   .tunecue-mini { padding:13px; }
   .tunecue-sample-card { padding:18px; border-radius:16px; transform:none; }
