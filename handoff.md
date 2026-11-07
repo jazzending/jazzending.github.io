@@ -1,6 +1,6 @@
 # Yiyi Studio Portfolio — Handoff
 
-Last reviewed: 2026-11-07
+Last reviewed: 2026-11-08
 Primary public site: <https://yiyistudio.web.app/>  
 Primary repository: <https://github.com/jazzending/jazzending.github.io>
 
@@ -76,7 +76,7 @@ Each block in `projects.js` becomes one archive card. Keep the same fields unles
 
 ## 4. Current published project structure
 
-The prepared release displays this order; update this wording to `current main branch` after publication:
+The current `main` branch displays this order:
 
 1. **Somewhere, a Lighthouse** — interactive bilingual postcard experience built around 200 real lighthouses. Live site: <https://somewhere-lighthouse.web.app/>.
 2. **ThisOne** — supermarket ingredient comparison app. Its card links to the GitHub project and to `thisone-test.html`, which shows a separate real-use video.
@@ -158,11 +158,15 @@ Update Bonjour only when specifically requested, and keep each project card pair
 - Reviewed the homepage renderer, project data, standalone ThisOne/TuneCue pages, deployment files, and the separate legacy checkout.
 - Created this handoff. No site content, deployment configuration, commit, or live release was changed in this baseline step.
 
-### 2026-11-07 — Add Somewhere, a Lighthouse locally
+### 2026-11-08 — Publish Somewhere, a Lighthouse
 
 - Added `Somewhere, a Lighthouse` as the first project, followed by ThisOne and Soft Pause.
 - Added the owned three-screen product preview at `images/somewhere-lighthouse-preview.png` and a project-specific full-image presentation rule.
 - Linked the card to the published product at `https://somewhere-lighthouse.web.app/`.
 - Added a separate `Chinese version / 中文版` link to `https://somewhere-lighthouse.web.app/zh/` beneath the primary project link.
 - Refreshed the homepage CSS and project-data cache versions so visitors receive the new card after release.
-- Updated project numbering and this handoff. Local review is pending before any commit or Firebase release.
+- Updated project numbering and this handoff.
+- Local QA passed at desktop and narrow mobile widths: the first three cards render in the intended order, the lighthouse preview is fully visible, links resolve correctly, and there is no horizontal overflow or browser-console error.
+- Published as GitHub commit `5345e73` (`Add lighthouse project to portfolio`). A normal HTTPS Git push returned an HTTP 400 connection error, so the same reviewed six-file change was safely written through the authenticated GitHub API; local `main` was then rebased to match the remote commit.
+- Verified successful Firebase deployment: GitHub Actions run `42423584140` (`Deploy to Firebase Hosting on merge`).
+- Verified public release at <https://yiyistudio.web.app/>: the current project data contains the Lighthouse card, its preview image returns HTTP 200, and both live links point to the English root and `/zh/` Chinese version.
