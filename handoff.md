@@ -184,4 +184,6 @@ Update Bonjour only when specifically requested, and keep each project card pair
 - Replaced the interim cropped English homepage screenshot with a dedicated three-panel English product preview: the entry prompt, watercolor postcard, and postcard information card appear side by side, matching the earlier Chinese preview's explanatory structure.
 - Preserved the product's watercolor layout and visual flow while localizing the interface copy to English. The Chinese site remains linked separately through `Chinese version / 中文版`.
 - Added `images/somewhere-lighthouse-preview-en-three-panel.png` (1536 × 1024) and bumped the project-data cache version to `20261108b`.
-- Local visual review passed at desktop width; publication was explicitly approved by Yiyi and remote verification is pending.
+- Local visual review passed at desktop width.
+- Published as GitHub commit `4a2e83b` (`Use three-panel English lighthouse preview`) and verified successful Firebase deployment in GitHub Actions run `42429619961`.
+- Verified <https://yiyistudio.web.app/> now loads `projects.js?v=20261108b`, references the three-panel English preview, and returns that image with HTTP 200.
