@@ -170,3 +170,9 @@ Update Bonjour only when specifically requested, and keep each project card pair
 - Published as GitHub commit `5345e73` (`Add lighthouse project to portfolio`). A normal HTTPS Git push returned an HTTP 400 connection error, so the same reviewed six-file change was safely written through the authenticated GitHub API; local `main` was then rebased to match the remote commit.
 - Verified successful Firebase deployment: GitHub Actions run `42423584140` (`Deploy to Firebase Hosting on merge`).
 - Verified public release at <https://yiyistudio.web.app/>: the current project data contains the Lighthouse card, its preview image returns HTTP 200, and both live links point to the English root and `/zh/` Chinese version.
+
+### 2026-11-08 — English Lighthouse preview prepared locally
+
+- Replaced the Lighthouse portfolio-card image with a 3:2 crop of the live product's English desktop homepage. It shows `Somewhere, a lighthouse`, `What's on your mind?`, and `Meet a lighthouse` alongside the lighthouse illustration.
+- The Chinese version remains available only through the dedicated `Chinese version / 中文版` link; it is no longer used as the card visual.
+- Updated the `projects.js` cache version. Local review is pending before this image-only correction is published.
