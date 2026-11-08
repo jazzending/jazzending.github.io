@@ -193,4 +193,6 @@ Update Bonjour only when specifically requested, and keep each project card pair
 - Repositioned the card around the core product promise: users meet one real lighthouse that feels like their own.
 - Replaced the previous feature-heavy description with a direct product explanation, and replaced the `Bilingual` and `Postcard experience` tags with `Personal discovery` and `Real places`.
 - Removed the em dash from this card's English copy and bumped the project-data cache version to `20261108c`.
-- Local and public verification are pending.
+- Local review passed and public release was verified.
+- Published as GitHub commit `9738650` (`Refine lighthouse product positioning`) and verified successful Firebase deployment in GitHub Actions run `42436212116`.
+- Verified <https://yiyistudio.web.app/> loads `projects.js?v=20261108c` with the `feels like your own` positioning and the revised tags.
