@@ -178,3 +178,10 @@ Update Bonjour only when specifically requested, and keep each project card pair
 - Updated the `projects.js` cache version and checked the first archive card locally at desktop width.
 - Published as GitHub commit `371694e` (`Use English lighthouse portfolio preview`) and verified successful Firebase deployment in GitHub Actions run `42428339359`.
 - Verified <https://yiyistudio.web.app/> now loads `projects.js?v=20261108a`, references `images/somewhere-lighthouse-preview-en.png`, and returns that new image with HTTP 200.
+
+### 2026-11-08 — Prepare three-panel English Lighthouse preview
+
+- Replaced the interim cropped English homepage screenshot with a dedicated three-panel English product preview: the entry prompt, watercolor postcard, and postcard information card appear side by side, matching the earlier Chinese preview's explanatory structure.
+- Preserved the product's watercolor layout and visual flow while localizing the interface copy to English. The Chinese site remains linked separately through `Chinese version / 中文版`.
+- Added `images/somewhere-lighthouse-preview-en-three-panel.png` (1536 × 1024) and bumped the project-data cache version to `20261108b`.
+- Local visual review passed at desktop width; publication was explicitly approved by Yiyi and remote verification is pending.

@@ -9,7 +9,7 @@ const projects = [
     description: "Write a thought — or leave it blank — and meet one of 200 real lighthouses. Each encounter becomes a bilingual watercolor postcard with its name, location, source, and a downloadable front and back.",
     role: "Product concept · Research direction · UX design · AI-assisted build",
     tags: ["200 real lighthouses", "Bilingual", "Postcard experience"],
-    image: "images/somewhere-lighthouse-preview-en.png",
+    image: "images/somewhere-lighthouse-preview-en-three-panel.png",
     imageClass: "lighthouse-preview",
     imageAlt: "Somewhere, a Lighthouse product showing a prompt, lighthouse postcard front, and postcard back",
     link: "https://somewhere-lighthouse.web.app/",
