@@ -187,3 +187,10 @@ Update Bonjour only when specifically requested, and keep each project card pair
 - Local visual review passed at desktop width.
 - Published as GitHub commit `4a2e83b` (`Use three-panel English lighthouse preview`) and verified successful Firebase deployment in GitHub Actions run `42429619961`.
 - Verified <https://yiyistudio.web.app/> now loads `projects.js?v=20261108b`, references the three-panel English preview, and returns that image with HTTP 200.
+
+### 2026-11-08 — Prepare Lighthouse positioning copy update
+
+- Repositioned the card around the core product promise: users meet one real lighthouse that feels like their own.
+- Replaced the previous feature-heavy description with a direct product explanation, and replaced the `Bilingual` and `Postcard experience` tags with `Personal discovery` and `Real places`.
+- Removed the em dash from this card's English copy and bumped the project-data cache version to `20261108c`.
+- Local and public verification are pending.
